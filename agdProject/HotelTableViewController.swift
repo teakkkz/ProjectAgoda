@@ -35,6 +35,8 @@ class HotelTableViewController: UITableViewController {
     }
 
     var hotelArray = [Hotel]()
+    var filteredArray = [Hotel]()
+
     @IBOutlet var tbView: UITableView!
     
     
@@ -69,16 +71,69 @@ class HotelTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
+    @IBOutlet weak var staroneBtn: UIButton! //1
+    @IBOutlet weak var startwoBtn: UIButton! //2
+//    @IBOutlet weak var starthreeBtn: UIButton!//3
+//    @IBOutlet weak var starfour: UIButton! //4
+//    @IBOutlet weak var starfive: UIButton! //5
+//
+    @IBAction func oneTapped(_ sender: Any) {
+        if staroneBtn.isSelected == true{
+            staroneBtn.setBackgroundImage(#imageLiteral(resourceName: "1stared"), for: .normal)
+            hotelArray.filter(){ $0.star == 1 }
+            
+           
+           
+            
+        }else if staroneBtn.isSelected == false{
+            staroneBtn.setBackgroundImage(#imageLiteral(resourceName: "1star"), for: .normal)
+        }
+        staroneBtn.isSelected = !staroneBtn.isSelected
+    }
+    
+    
 
-    @IBOutlet weak var testtt: UIButton!
-    @IBAction func testBtn(_ sender: UIButton) {
-        if testtt.isSelected{
-            testtt.setBackgroundImage(#imageLiteral(resourceName: "st1"), for: .normal)}
+        
+//
+    @IBAction func twoTapped(_ sender: UIButton) {
+        if startwoBtn.isSelected{
+            startwoBtn.setBackgroundImage(#imageLiteral(resourceName: "2star"), for: .normal)}
         else{
-            testtt.setBackgroundImage(#imageLiteral(resourceName: "st2"), for: .normal)
+            startwoBtn.setBackgroundImage(#imageLiteral(resourceName: "2stared"), for: .normal)
         }
-        testtt.isSelected = !testtt.isSelected
-        }
+        startwoBtn.isSelected = !startwoBtn.isSelected
+
+    }
+//
+//    @IBAction func threeTapped(_ sender: UIButton) {
+//        if starthreeBtn.isSelected{
+//            starthreeBtn.setBackgroundImage(#imageLiteral(resourceName: "3star"), for: .normal)}
+//        else{
+//            starthreeBtn.setBackgroundImage(#imageLiteral(resourceName: "3stared"), for: .normal)
+//        }
+//        starthreeBtn.isSelected = !starthreeBtn.isSelected
+//    
+//    }
+//    @IBAction func fourTapped(_ sender: UIButton) {
+//        if starfour.isSelected{
+//            starfour.setBackgroundImage(#imageLiteral(resourceName: "4star"), for: .normal)}
+//        else{
+//            starfour.setBackgroundImage(#imageLiteral(resourceName: "4stared"), for: .normal)
+//        }
+//        starfour.isSelected = !starfour.isSelected
+//
+//    }
+//    @IBAction func fiveTapped(_ sender: UIButton) {
+//        if starfive.isSelected{
+//            starfive.setBackgroundImage(#imageLiteral(resourceName: "5star"), for: .normal)}
+//        else{
+//            starfive.setBackgroundImage(#imageLiteral(resourceName: "5stared"), for: .normal)
+//        }
+//        starfive.isSelected = !starfive.isSelected
+//
+//    }
+    
+
     
     
     
@@ -108,12 +163,7 @@ class HotelTableViewController: UITableViewController {
     
 
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        _ = tableView.indexPathForRow
-        if let _ = tableView.cellForRow(at: indexPath as IndexPath){
-            
-        }
-    }
+ 
     @IBOutlet weak var OkBtnn: UIButton!
     @IBOutlet weak var SFBtn1: UIButton!
     @IBAction func SFBtn(_ sender: Any) {
@@ -128,6 +178,7 @@ class HotelTableViewController: UITableViewController {
    
         if switchBtno.isOn == true {
             hotelArray.sort(){$0.hotelName < $1.hotelName}
+            
             }
         else if switchBtno.isOn == false{
             hotelArray.shuffle()
