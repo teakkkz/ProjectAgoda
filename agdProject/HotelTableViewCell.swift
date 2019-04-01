@@ -9,8 +9,6 @@
 import UIKit
 
 class HotelTableViewCell: UITableViewCell {
-  
-
     @IBOutlet weak var NameLbl: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()

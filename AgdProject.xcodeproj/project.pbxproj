@@ -10,7 +10,6 @@
 		37755ACA22059780007A424E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37755AC922059780007A424E /* AppDelegate.swift */; };
 		37755ACC22059780007A424E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37755ACB22059780007A424E /* ViewController.swift */; };
 		37755ACF22059780007A424E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37755ACD22059780007A424E /* Main.storyboard */; };
-		37755AD122059781007A424E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37755AD022059781007A424E /* Assets.xcassets */; };
 		37755AD422059781007A424E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37755AD222059781007A424E /* LaunchScreen.storyboard */; };
 		37755ADF22059781007A424E /* AgdProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37755ADE22059781007A424E /* AgdProjectTests.swift */; };
 		37755AEA22059781007A424E /* AgdProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37755AE922059781007A424E /* AgdProjectUITests.swift */; };
@@ -18,6 +17,7 @@
 		37755AFC2205A1DF007A424E /* hotels.json in Resources */ = {isa = PBXBuildFile; fileRef = 37755AFB2205A1DF007A424E /* hotels.json */; };
 		37755AFE2205A362007A424E /* HotelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37755AFD2205A362007A424E /* HotelTableViewController.swift */; };
 		37755B002205A6AD007A424E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37755AFF2205A6AD007A424E /* DetailViewController.swift */; };
+		37DBB8BE220ED530008CD7D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37DBB8BD220ED530008CD7D8 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +42,6 @@
 		37755AC922059780007A424E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37755ACB22059780007A424E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		37755ACE22059780007A424E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		37755AD022059781007A424E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37755AD322059781007A424E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37755AD522059781007A424E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37755ADA22059781007A424E /* AgdProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgdProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +54,7 @@
 		37755AFB2205A1DF007A424E /* hotels.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hotels.json; sourceTree = "<group>"; };
 		37755AFD2205A362007A424E /* HotelTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelTableViewController.swift; sourceTree = "<group>"; };
 		37755AFF2205A6AD007A424E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		37DBB8BD220ED530008CD7D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +111,8 @@
 				37755AFF2205A6AD007A424E /* DetailViewController.swift */,
 				37755AF72205981F007A424E /* HotelTableViewCell.swift */,
 				37755ACD22059780007A424E /* Main.storyboard */,
+				37DBB8BD220ED530008CD7D8 /* Assets.xcassets */,
 				37755AFB2205A1DF007A424E /* hotels.json */,
-				37755AD022059781007A424E /* Assets.xcassets */,
 				37755AD222059781007A424E /* LaunchScreen.storyboard */,
 				37755AD522059781007A424E /* Info.plist */,
 			);
@@ -242,8 +242,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				37755AD422059781007A424E /* LaunchScreen.storyboard in Resources */,
-				37755AD122059781007A424E /* Assets.xcassets in Resources */,
 				37755AFC2205A1DF007A424E /* hotels.json in Resources */,
+				37DBB8BE220ED530008CD7D8 /* Assets.xcassets in Resources */,
 				37755ACF22059780007A424E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,6 +449,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9UZY37Y4U6;
 				INFOPLIST_FILE = AgdProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -466,6 +467,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9UZY37Y4U6;
 				INFOPLIST_FILE = AgdProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

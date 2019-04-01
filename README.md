@@ -1,2 +1,0 @@
-# agd
-agoda internship
